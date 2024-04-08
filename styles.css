@@ -1,0 +1,51 @@
+/* Selecting all boxes */
+.container div {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Selecting even boxes */
+.container div:nth-child(even) {
+    background-color: #66cdaa;
+}
+
+/* Selecting odd boxes */
+.container div:nth-child(odd) {
+    background-color: #ff6b6b;
+}
+
+/* Selecting the first box */
+.container div:first-child {
+    border: 2px solid #333;
+}
+
+/* Selecting the last box */
+.container div:last-child {
+    border: 2px solid #333;
+}
+
+/* Selecting direct child boxes */
+.container > div {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Using comma to select multiple elements */
+.box1, .box2 {
+    transform: rotate(45deg);
+}
+
+/* Using space to select descendants */
+.container div .box3 {
+    background-color: #ffd700;
+}
+
+/* Using vmin unit */
+.box4 {
+    width: 20vmin;
+    height: 20vmin;
+}
